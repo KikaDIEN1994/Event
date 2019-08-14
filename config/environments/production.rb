@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+config.action_mailer.default_url_options = { :host => 'cheap-eventbrite.herokuapp.com' }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -61,7 +61,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "Event_#{Rails.env}"
+  # config.active_job.queue_name_prefix = "cheap-event-brite_#{Rails.env}"
 
   config.action_mailer.perform_caching = false
 
